@@ -1,0 +1,20 @@
+    <!-- 底部按钮   在index.html文件里面 添加下面的代码 -->
+<button class="bottom-button" onclick="redirectToAdmin()">☼ </button>
+<style>
+  /* 底部按钮样式 */
+  .bottom-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    background-color: transparent;
+    transform: translateX(-50%);
+    z-index: 9999;
+    border: none;
+    cursor: pointer;
+  }
+</style>
+<script>
+function redirectToAdmin() {
+  window.location.href = window.location.origin + '/admin';
+}
+</script>
